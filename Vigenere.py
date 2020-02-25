@@ -13,7 +13,7 @@ class VigenereCipher(object):
             else:
                 result+= i
                 a+=1
-        return result
+        print(result)
     
     def decode(self, text):
         result=''
@@ -25,4 +25,13 @@ class VigenereCipher(object):
             else:
                 result+= i
                 a+=1
-        return result
+        print(result)
+abc = "abcdefghijklmnopqrstuvwxyz";
+key =input("Enter the key")
+text= input("Enter the message: ")
+c= VigenereCipher(key,abc)
+p=input("Encode(1) or decode(2)")
+if p==1:
+    c.encode(text)
+elif p==2:
+    c.decode(text)
