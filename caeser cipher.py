@@ -1,5 +1,5 @@
 a=input("Enter the plaintext: ")
-a=a.trim()
+a=a.strip()
 k=int(input("Enter the key: "))
 result=''
 for i in range(len(a)):
