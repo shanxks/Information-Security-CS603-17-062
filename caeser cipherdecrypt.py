@@ -1,4 +1,5 @@
 a=input("Enter the ciphertext: ")
+a=a.strip()
 k=int(input("Enter the Key: "))
 result=''
 for i in range(len(a)):
